@@ -29,7 +29,7 @@ beforeAll(async () => {
   process.env.DATABASE_URL = databaseUrl
 
   // Executando o comando de criação do schema
-  execSync('npx prisma migrate deploy')
+  execSync('npx prisma db push')
 })
 
 afterAll(async () => {
